@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Анимированный сайт</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-b from-black to-gray-900 text-white font-sans">
+  <header class="text-center py-10">
+    <h1 class="text-4xl font-bold" data-aos="fade-down">
+      Добро пожаловать, на мой первый сайт
+    </h1>
+    <p class="mt-4 text-lg" data-aos="fade-up">
+      Здесь тусят гаражисты
+    </p>
+  </header>
+
+  <section class="grid grid-cols-2 md:grid-cols-4 gap-6 px-6 py-12" data-aos="fade-up">
+    <div class="bg-white/10 rounded-2xl p-6 flex justify-center items-center hover:scale-105 hover:bg-white/20 transition-all duration-300" data-aos="zoom-in" data-aos-delay="0">
+      <img src="https://drive.google.com/uc?export=view&id=1EwTwQiQ-sD9JBhP6by0_N4Sx0Q4a6xV5" alt="Логотип 1" class="w-full h-auto object-contain" />
+    </div>
+    <div class="bg-white/10 rounded-2xl p-6 flex justify-center items-center hover:scale-105 hover:bg-white/20 transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
+      <img src="лрдрд.PNG" alt="Логотип 2" class="h-32" />
+    </div>
+    <div class="bg-white/10 rounded-2xl p-6 flex justify-center items-center hover:scale-105 hover:bg-white/20 transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
+      <img src="лрдрд.PNG" alt="Логотип 3" class="h-32" />
+    </div>
+    <div class="bg-white/10 rounded-2xl p-6 flex justify-center items-center hover:scale-105 hover:bg-white/20 transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
+      <img src="лрдрд.PNG" alt="Логотип 4" class="w-32 h-32 object-contain" />
+    </div>
+  </section>
+
+  <section class="px-6 py-12" data-aos="fade-up">
+    <h2 class="text-2xl font-semibold mb-4">О нас</h2>
+    <p class="text-gray-200 leading-relaxed">
+      Мы создаём современные веб-решения с фокусом на UX/UI. Прокручивай вниз и наблюдай магию анимации!
+    </p>
+  </section>
+
+  <section class="px-6 py-12 bg-gray-900" data-aos="fade-up">
+    <h2 class="text-2xl font-semibold mb-6">Портфолио</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-gray-800 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-lg font-bold mb-2">Проект 1</h3>
+        <p class="flex items-center gap-2">
+          Описание проекта. Что мы делали, технологии и результат.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-lg font-bold mb-2">Проект 2</h3>
+        <p>Описание проекта. Что мы делали, технологии и результат.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-lg font-bold mb-2">Проект 3</h3>
+        <p>Описание проекта. Что мы делали, технологии и результат.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-6 py-12" data-aos="fade-up">
+    <h2 class="text-2xl font-semibold mb-6">Связаться с нами</h2>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Ваше имя" class="w-full p-3 rounded bg-gray-800 text-white" required />
+      <input type="email" placeholder="Email" class="w-full p-3 rounded bg-gray-800 text-white" required />
+      <textarea placeholder="Сообщение" rows="5" class="w-full p-3 rounded bg-gray-800 text-white" required></textarea>
+      <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded text-white font-bold transition">
+        Отправить
+      </button>
+    </form>
+  </section>
+
+  <footer class="text-center py-8 text-sm text-gray-400">
+    &copy; 2025 Все права защищены
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
